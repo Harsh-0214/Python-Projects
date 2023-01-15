@@ -23,9 +23,6 @@ class rectangle:
     def getwidth(self):#returns width value
         return self.w
     
-    def displayareaformula(self):
-        return ('The formula for the area of a rectangle is A=lxw')
-        
     def area(self): #calculates area
         rectangle_area=((self.l)*(self.w))
         return rectangle_area
@@ -34,11 +31,13 @@ class rectangle:
         return rectangle_perimeter
     
     def __repr__(self):
-        return ('Length = {​​:.2f}​​, Width = {​​:.2f}​​ '.format(self.l, self.w))
+        return ('Area = ', self.area(), 'Perimeter = ', self.perimeter())
         
 ##Client Code
 
 shape=rectangle() #creates the object 'shape'
+
+
 l_value=shape.getlength()
 w_value=shape.getwidth()
 
@@ -52,7 +51,7 @@ print("({}, {})".format(shape.l, shape.w))
 
 print('New length is: %.2f and New width is %.2f and Area of shape is %.2f and perimeter of shape is %.2f'%(shape.getlength(), shape.getwidth(), shape.area(), shape.perimeter()))
 
-##print('Area of shape is: %.2f'%(shape.area()))
-##print('Perimeter of shape is: %.2f'%(shape.perimeter()))
-print(shape) #this print statement gives me an error
-print(shape.displayareaformula)
+print('Area of shape is: %.2f'%(shape.area()))
+print('Perimeter of shape is: %.2f'%(shape.perimeter()))
+##print(shape) #this print statement gives me an error
+

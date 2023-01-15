@@ -1,0 +1,14 @@
+#Harsh Tamakuwala
+#662282
+#Mr.Veera
+#File-I/O Test-straight road - Q2
+#March 30, 2021
+
+contents=[]
+
+file=open('input.txt', 'r')
+
+for line in file:
+    contents=line.split(' ')
+print(contents)
+file.close()
